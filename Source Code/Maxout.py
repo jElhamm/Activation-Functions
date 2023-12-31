@@ -30,3 +30,15 @@ class Maxout:
             axis = None
         return np.max(x, axis=axis)                                                         # Apply the max operation on the specified axes
  
+    def derivative(self, x):
+        if x.ndim > 1:
+            axis = tuple(range(x.ndim - 1))                                                 # Get the axes to apply the max operation on
+            axis = axis[0] if isinstance(axis, tuple) else axis                             # Convert axis to a single value if it's a tuple
+            max_indices = np.argmax(x, axis=axis)                                           # Get the indices of the maximum values along the specified axis
+            d = np.zeros_like(x)                                                            # Create an array of zeros with the same shape as x
+            np.put_along_axis(d, np.expand_dims(max_indices, axis=axis), 1, axis=axis)      # Set the value 1 at the indices of the maximum values
+            return d                                                                        # Return the derivative array
+        else:
+            # If x is 1D, return an array with 1s at the maximum value index and 0s elsewhere
+            return np.where(x == np.max(x), 1, 0)
+ 
