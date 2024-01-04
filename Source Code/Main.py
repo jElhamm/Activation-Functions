@@ -76,4 +76,10 @@ x = float(input("---> Enter a value for the GELU activation: "))
 print(gelu.activation(x))
 print(gelu.derivative(x))
 
+# SMHT
+smht = SMHT()
+x = float(input("---> Enter a value for the smht activation: "))
+print(smht.activation(x))
+print(smht.derivative(x))
+
 print("------------------------------------------------------------------------------")
