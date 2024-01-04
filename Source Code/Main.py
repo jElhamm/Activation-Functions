@@ -69,4 +69,11 @@ x = float(input("---> Enter a value for the Swish activation: "))
 print(swish.activation(x))
 print(swish.derivative(x))
 
+# GELU
+gelu = GELU()
+print("------------------------------------------------------------------------------")
+x = float(input("---> Enter a value for the GELU activation: "))
+print(gelu.activation(x))
+print(gelu.derivative(x))
+
 print("------------------------------------------------------------------------------")
