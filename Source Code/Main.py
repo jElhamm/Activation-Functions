@@ -13,6 +13,7 @@ from selu import SELU
 from maxout import Maxout
 from swish import Swish
 
+
 # Sigmoid
 sigmoid = Sigmoid()
 print("------------------------------------------------------------------------------")
@@ -81,5 +82,12 @@ smht = SMHT()
 x = float(input("---> Enter a value for the smht activation: "))
 print(smht.activation(x))
 print(smht.derivative(x))
+
+# PReLU
+prelu = PReLU(alpha=0.01)
+print("------------------------------------------------------------------------------")
+x = float(input("---> Enter a value for the PReLU activation: "))
+print(prelu.activation(x))
+print(prelu.derivative(x))
 
 print("------------------------------------------------------------------------------")
