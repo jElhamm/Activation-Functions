@@ -90,4 +90,11 @@ x = float(input("---> Enter a value for the PReLU activation: "))
 print(prelu.activation(x))
 print(prelu.derivative(x))
 
+# Gaussian
+gaussian = Gaussian()
+print("------------------------------------------------------------------------------")
+x = float(input("---> Enter a value for the Gaussian activation: "))
+print(gaussian.activation(x))
+print(gaussian.derivative(x))
+
 print("------------------------------------------------------------------------------")
