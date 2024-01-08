@@ -12,7 +12,10 @@ from elu import ELU
 from selu import SELU
 from maxout import Maxout
 from swish import Swish
-
+from gelu import GELU
+from smht import SMHT
+from prelu import PReLU
+from gaussian import Gaussian
 
 # Sigmoid
 sigmoid = Sigmoid()
