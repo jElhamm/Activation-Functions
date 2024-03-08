@@ -73,8 +73,14 @@
    * [*More Information*](https://www.geeksforgeeks.org/activation-functions-neural-networks/)
 
 
-## License
+## References
 
    * [Activation Functions in Neural Networks](https://www.v7labs.com/blog/neural-networks-activation-functions)
    * [The Sigmoid Activation Function - Python Implementation](https://www.digitalocean.com/community/tutorials/sigmoid-activation-function-python)
    * [How to Choose an Activation Function for Deep Learning](https://machinelearningmastery.com/choose-an-activation-function-for-deep-learning/#:~:text=The%20hyperbolic%20tangent%20activation%20function,the%20range%20%2D1%20to%201.)
+
+
+## License
+
+   This repository is licensed under the MIT License.
+   See the [LICENSE](./LICENSE) file for more details.
